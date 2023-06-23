@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+            <div id="maquininha">
+                <h2>Calculadora Maquininha</h2>
+                <form onsubmit="calcular();return false">
+                    <input type="number" required id="venda" placeholder="Valor">
+                                    
+                <select id="cartao">
+                    <option value="1">Débito</option>
+                    <option value="2">Credito</option>
+                </select>
+                <select id="vezes" >
+                    <option value="1">1x</option>
+                    <option value="2">2x</option>
+                    <option value="3">3x</option>
+                    <option value="4">4x</option>
+                    <option value="5">5x</option>
+                    <option value="6">6x</option>
+                    <option value="7">7x</option>
+                    <option value="8">8x</option>
+                    <option value="9">9x</option>
+                    <option value="10">10x</option>
+                    <option value="11">11x</option>
+                    <option value="12">12x</option>
+                    <option value="13">13x</option>
+                    <option value="14">14x</option>
+                    <option value="15">15x</option>
+                    <option value="16">16x</option>
+                    <option value="17">17x</option>
+                    <option value="18">18x</option>
+                </select>
+                <br>
+                <button onclick="calcular()">CALCULAR</button>
+                
+                </form>
+                <br>
+                <div id="taxa"></div>
+                <div id="valorTotal"></div>
+            </div>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+</html>
